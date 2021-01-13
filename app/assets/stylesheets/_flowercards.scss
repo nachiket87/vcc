@@ -3,8 +3,10 @@ $layout-breakpoint-small: 960px;
 .flower-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 1rem;
   @media(max-width: $layout-breakpoint-small){
     grid-template-columns: none;
+    grid-gap: none;
   }
 }
 
@@ -13,7 +15,7 @@ $layout-breakpoint-small: 960px;
   align-items: center;
   flex-direction: column;
   padding: 1rem;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
   border-radius: 5px;
 }
 
@@ -22,12 +24,8 @@ $layout-breakpoint-small: 960px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-.flower-card p {
-  padding: 0.5rem;
 }
-
 
 .flower-card h3{
   font-weight: 500;
