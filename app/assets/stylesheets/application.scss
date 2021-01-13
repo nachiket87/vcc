@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+@import './_flowercards.scss';
+
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
